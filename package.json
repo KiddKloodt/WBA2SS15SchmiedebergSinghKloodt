@@ -1,0 +1,12 @@
+{
+  "name": "Aufgabe1",
+  "version": "0.1.0",
+  "description": "WBA2_SS15 Aufgabe1",
+  "main": "app.js",
+  "author": "FLorian Schmiedeberg, Lana Kloodt , Carolina Singh",
+  "readmeFilename": "../../README.md",
+  "dependencies": {
+    "chalk": "^1.0.0",
+      "fs": "0.0.2"
+  }
+}
