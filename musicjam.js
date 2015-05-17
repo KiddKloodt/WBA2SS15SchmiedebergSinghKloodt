@@ -5,24 +5,24 @@ var jsonParser = bodyParser.json();
 var app = express();
  
 var data=[
-    {title: "Hello World"},
-    {title: "Test Titel2"},
-	{title: "haha"}
+    {title: "Name"},
+    {title: "Vorname"},
+	{title: "Geb."}
 ]
 
 
  
-app.get('/data', function(reg, res){
+app.get('/index', function(reg, res){
     res.status(200).json(data);
 });
  
-app.post('/data', jsonParser, function(req,res){
+app.post('/index', jsonParser, function(req,res){
     data.push(req.body);
 	res.type('plain').send('es hat geklappt!');
 })
  
 app.get('/',function(reg, res){
-    res.send('Hello World!');
+    res.send('Willkommen auf der Seite');
 });
  
 app.listen(3000, function(){
